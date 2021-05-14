@@ -1,0 +1,130 @@
+# _ _____ _____ _____ _____ _____ _____ _____ _
+#|_|_____|_____|_____|_____|_____|_____|_____|_|
+#| |          _____  _____   ____            | |
+#| |         |  __ \|  __ \ / __ \           | |
+#|_|         | |__) | |__) | |  | |          |_|
+#| |         |  ___/|  _  /| |  | |          | |
+#| |         | |    | | \ \| |__| |          | |
+#|_|         |_|    |_|  \_\\____/           |_|
+#| |                                         | |
+#| |        ProJumpPads | SedatTR#8666       | |
+#|_|_____ _____ _____ _____ _____ _____ _____|_|
+#|_|_____|_____|_____|_____|_____|_____|_____|_|
+#
+# If you have any question or suggestion please contact to me.
+# Discord: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+settings:
+  push:
+    enabled: true
+    power: 1
+    y: 1
+  block: SLIME_BLOCK
+  permission: "jumppads.command" # /jumppads (Set "" to disable.)
+  sounds:
+    launch: # Sound when player launch
+      enabled: false
+      name: ORB_PICKUP
+      volume: 1
+      pitch: 1
+    flying: # Sound while player is teleporting to location
+      enabled: false
+      name: ORB_PICKUP
+      volume: 1
+      pitch: 1
+    land: # Sound when player landed
+      enabled: false
+      name: ORB_PICKUP
+      volume: 1
+      pitch: 1
+    no-permission: # Sound when player haven't enough permission.
+      enabled: false
+      name: ORB_PICKUP
+      volume: 1
+      pitch: 1
+  particles:
+    jump-pad:
+      enabled: true
+      name: VILLAGER_HAPPY
+      x-offset: 1
+      y-offset: 1
+      z-offset: 1
+      speed: 1
+      amount: 100
+      time: 1 # Spawning Particle Time (Second)
+    travel:
+      enabled: true
+      name: EXPLOSION_HUGE
+      x-offset: 0
+      y-offset: 0
+      z-offset: 0
+      speed: 1
+      amount: 1
+    no-permission:
+      enabled: true
+      name: EXPLOSION_LARGE
+      x-offset: 0
+      y-offset: 0
+      z-offset: 0
+      speed: 1
+      amount: 1
+
+messages:
+  can-use: "&aYou can use this jump pad"
+  cannot-use: "&cYou need %permission% permission"
+  no-permission: "&cYou don't have enough permission!"
+  look-to-correct-block: "&cYou must look to correct block!"
+  wrong-pad: "&cThis jump pad is wrong!"
+  pos1-set: "&aPosition 1 is set."
+  pos2-set: "&aPosition 2 is set."
+  no-jump-pad: "&cNo jump pads found!"
+  added-command: "&aSuccessfully added command."
+  removed-command: "&aSuccessfully removed command."
+  already-added: "&cThis command is already added!"
+  not-added: "&cThis command is not added!"
+  deleted: "&aSuccessfully deleted jump pad."
+  created: "&aSuccessfully created jump pad."
+  jump-pad-exists: "&cThis jump pad is already exists!"
+  permission-message-set: "&aPermission message set."
+  permission-set: "&aPermission set."
+  fly-location-set: "&aFly location set."
+  reloaded: "&aPlugin is successfully reloaded!"
+  teleported: "&aSuccessfully teleported to jump pad."
+  fly-location-not-set: "&cDestination of jump pad not set!"
+  list: "&a%count%&8- &a%name%"
+  not-set: "&cNot Set!"
+  none: "&cNone!"
+  guide:
+    - "&a1 &8- &7Create jump pad with &f/jumppads create [name]&7."
+    - "&a2 &8- &7Set fly location with &f/jumppads set-fly-location [name]&7."
+    - "&a3 &8- &7Change position 1 with &f/jumppads pos1 [name]&7. (Look to block)"
+    - "&a4 &8- &7Change position 2 with &f/jumppads pos2 [name]&7. (Look to block)"
+  info:
+    - "&aName: &7%name%"
+    - "&aRequired Permission 1: &7%permission-1%"
+    - "&aRequired Permission 2: &7%permission-2%"
+    - "&aPermission Message: &7%permission-message%"
+    - "&aFly Location: &7%fly-location%"
+    - "&aPosition 1 (X-Z): &7%position-1%"
+    - "&aPosition 2 (X-Z): &7%position-2%"
+  player-usage:
+    - "&8- &a/jumppads create [name]: &7Creates new jump pad."
+    - "&8- &a/jumppads delete [name]: &7Deletes jump pad."
+    - "&8- &a/jumppads teleport [name]: &7Teleports you to jump pad's location."
+    - "&8- &a/jumppads pos1 [name]: &7Changes jump pad's position 1."
+    - "&8- &a/jumppads pos2 [name]: &7Changes jump pad's position 2."
+    - "&8- &a/jumppads set-fly-location [name]: &7Changes jump pad's fly location."
+    - "&8- &a/jumppads add-command [name] [command]: &7Adds command to jump pad. (This commands will execute when player travelled)"
+    - "&8- &a/jumppads remove-command [name] [command]: &7Removes command from jump pad. (This commands will execute when player travelled)"
+    - "&8- &a/jumppads set-permission-1 [name] [permission]: &7Changes jump pad's required permission 1."
+    - "&8- &a/jumppads set-permission-2 [name] [permission]: &7Changes jump pad's required permission 2."
+    - "&8- &a/jumppads set-permission-message [name] [message]: &7Changes jump pad's permission message."
+    - "&8- &a/jumppads info [name]: &7Shows jump pad's informations."
+    - "&8- &a/jumppads list: &7Shows all jump pads."
+    - "&8- &a/jumppads reload: &7Reloads plugin."
+    - ""
+    - "&7Use &f/jumppads guide &7for setup guide!"
+  console-usage:
+    - "&8- &a/jumppads info [name]: &7Shows jump pad's informations."
+    - "&8- &a/jumppads list: &7Shows all jump pads."
+    - "&8- &a/jumppads reload: &7Reloads plugin."

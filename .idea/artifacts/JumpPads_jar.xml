@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JumpPads:jar">
+    <output-path>$PROJECT_DIR$/../../server/plugins</output-path>
+    <root id="archive" name="JumpPads.jar">
+      <element id="module-output" name="ProJumpPads" />
+    </root>
+  </artifact>
+</component>

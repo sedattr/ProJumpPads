@@ -1,0 +1,13 @@
+name: ProJumpPads
+authors: [qKing12, SedatTR]
+main: me.sedattr.jumppads.JumpPads
+description: Made by qKing12#1918, contiuned by SedatTR#8666 with love.
+version: 3.1
+softdepend:
+  - Multiverse-Core
+  - PlaceholderAPI
+
+commands:
+  jumppads:
+    aliases: [jumppad]
+    description: Default jump pads command.
