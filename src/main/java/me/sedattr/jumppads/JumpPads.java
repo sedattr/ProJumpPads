@@ -28,11 +28,6 @@ public class JumpPads extends JavaPlugin {
         Variables.jumpPads = new ArrayList<>();
 
         File folder = new File(this.getDataFolder() + File.separator + "List");
-        if (folder == null) {
-            folder.mkdir();
-            return;
-        }
-
         File[] files = folder.listFiles();
         if (files == null || files.length <= 0)
             return;
