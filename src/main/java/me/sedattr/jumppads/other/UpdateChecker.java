@@ -17,10 +17,6 @@ public class UpdateChecker {
 
         InputStreamReader reader = new InputStreamReader(con.getInputStream());
         BufferedReader br = new BufferedReader(reader);
-        if (br == null || reader == null) {
-            Bukkit.getConsoleSender().sendMessage("§8[§bProJumpPads§8] §aPlugin is up to date!");
-            return;
-        }
 
         String newVersion = br.readLine();
         if (newVersion == null || oldVersion.equals("") || newVersion.equals("") || oldVersion.equalsIgnoreCase(newVersion))
